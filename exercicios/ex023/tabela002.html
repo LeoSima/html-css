@@ -20,12 +20,7 @@
             border: 1px solid black;
             padding: 10px;
         }
-
-        thead, tfoot{
-            background-color: #707070;
-            color: white;
-        }
-
+        
         caption{
             font-size: 1.3em;
             font-weight: 600;
@@ -33,7 +28,16 @@
             background-color: rgba(0, 0, 0, 0.38)
         }
 
-        .num{
+        thead, tfoot{
+            background-color: #707070;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n){ /*o nth-child() aceita os valores odd e even (ímpar e par)*/
+            background-color: lightgray;
+        }
+
+        td.num{
             text-align: right;
         }
     </style>
@@ -58,7 +62,7 @@
          <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 75px;">Poulação</th>
+                <th scope="col" style="width: 75px;">População</th>
             </tr>
          </thead>
          <tbody>
