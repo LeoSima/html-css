@@ -13,16 +13,19 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-        }
-
-        tr:nth-child(2n){
-            background-color: lightgray;
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*Alinhamento Horizontal*/
+            vertical-align: middle; /*Alinhamento Vertical*/
+        }
+
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -45,22 +48,18 @@
         <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">200</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">300</td>
         </tr>
         <!-- Não é obrigatório o fechamento das tags <tr> e <td> -->
         <tr>
             <td>A4
             <td>B4
             <td>C4
-        <tr>
-            <td>A5
-            <td>B5
-            <td>C5
     </table>
 </body>
 </html>
